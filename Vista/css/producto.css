@@ -3,7 +3,6 @@
 /* General */
 body {
     background-color: rgb(70, 70, 70);
-    color: white;
 }
 
 h1 {
@@ -39,6 +38,7 @@ hr {
     margin: 20px;
     float: left;
     transition: all 0.3s;
+    color: white;
 }
 
 .tarjeta-producto__info p{
