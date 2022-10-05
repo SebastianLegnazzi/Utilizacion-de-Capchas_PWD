@@ -12,7 +12,7 @@ include "../configuracion.php";
   <script src="bootstrap/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/producto.css">
-  <script src="Vista/js/producto.js"></script>
+  <script src="js/producto.js"></script>
 </head>
 
 <body>
