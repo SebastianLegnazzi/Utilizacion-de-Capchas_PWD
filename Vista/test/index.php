@@ -50,6 +50,10 @@ include_once("../estructura/Cabecera.php");
     </div>
 </div>
 <div id="head__productos" class="container">
+    <div id="content__login" class="d-flex align-self-center">
+        <a class="nav-link text-white btn btn-secondary m-2" href="registrarse.php" style="font-family: 'Chivo', sans-serif;">Registrarse</a>
+        <a class="nav-link text-white btn btn-secondary m-2" href="IniciarSesion.php" style="font-family: 'Chivo', sans-serif;">Ingresar</a>
+    </div>
     <div id="content__filter">
         <input type="text" name="filtrador" id="filtrador" placeholder="Buscador" onkeyup="filtrar(this.value)">
     </div>

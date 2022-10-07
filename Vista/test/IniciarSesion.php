@@ -27,7 +27,7 @@ include_once("../estructura/Cabecera.php");
                         </div>
                         <div class="contraseña_usuario_iguales">Son iguales! porfavor ponga un usuario y/o contraseña que no coincidan</div>
                     </div>
-                    <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Iniciar</button>
+                    <button class="w-100 mb-2 btn btn-lg rounded-3 btn-success" type="submit">Iniciar</button>
                 </form>
             </div>
         </div>
