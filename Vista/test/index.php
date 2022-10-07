@@ -1,5 +1,5 @@
 <?php
-include_once("Menu/Cabecera.php");
+include_once("../estructura/Cabecera.php");
 ?>
 
 <div>
@@ -55,13 +55,13 @@ include_once("Menu/Cabecera.php");
     </div>
     <div id="content__carrito" onclick="abrirCarrito()">
         <p id="contador__carrito"></p>
-        <img id="logo-carrito" src="img/carritoCompra.png" alt="Logo de Carrito">
+        <img id="logo-carrito" src="../img/carritoCompra.png" alt="Logo de Carrito">
     </div>
 </div>
 <div id="content__productos">
     <div class="tarjetas-productos box1" onclick="verDetalle(this)">
         <div class="tarjeta-producto__imagen">
-            <img class="foto__producto" src="img/Productos/producto1.jpg" alt="">
+            <img class="foto__producto" src="../img/Productos/producto1.jpg" alt="">
         </div>
         <div class="tarjeta-producto__info">
             <p class="nombre__producto">Campera - Ochentezca </p>
@@ -71,7 +71,7 @@ include_once("Menu/Cabecera.php");
     </div>
     <div class="tarjetas-productos box2" onclick="verDetalle(this)">
         <div class="tarjeta-producto__imagen">
-            <img class="foto__producto" src="img/Productos/producto2.jpg" alt="">
+            <img class="foto__producto" src="../img/Productos/producto2.jpg" alt="">
         </div>
         <div class="tarjeta-producto__info">
             <p class="nombre__producto">Zapatos - Galan</p>
@@ -81,7 +81,7 @@ include_once("Menu/Cabecera.php");
     </div>
     <div class="tarjetas-productos box3" onclick="verDetalle(this)">
         <div class="tarjeta-producto__imagen">
-            <img class="foto__producto" src="img/Productos/producto3.jpg" alt="">
+            <img class="foto__producto" src="../img/Productos/producto3.jpg" alt="">
         </div>
         <div class="tarjeta-producto__info">
             <p class="nombre__producto">Campera - Caritas</p>
@@ -91,7 +91,7 @@ include_once("Menu/Cabecera.php");
     </div>
     <div class="tarjetas-productos box4" onclick="verDetalle(this)">
         <div class="tarjeta-producto__imagen">
-            <img class="foto__producto" src="img/Productos/producto4.jpg" alt="">
+            <img class="foto__producto" src="../img/Productos/producto4.jpg" alt="">
         </div>
         <div class="tarjeta-producto__info">
             <p class="nombre__producto">Pantalon - Chinezco</p>
@@ -101,7 +101,7 @@ include_once("Menu/Cabecera.php");
     </div>
     <div class="tarjetas-productos box5" onclick="verDetalle(this)">
         <div class="tarjeta-producto__imagen">
-            <img class="foto__producto" src="img/Productos/producto5.jpg" alt="">
+            <img class="foto__producto" src="../img/Productos/producto5.jpg" alt="">
         </div>
         <div class="tarjeta-producto__info">
             <p class="nombre__producto">Patalon - Elephant</p>
@@ -111,7 +111,7 @@ include_once("Menu/Cabecera.php");
     </div>
     <div class="tarjetas-productos box6" onclick="verDetalle(this)">
         <div class="tarjeta-producto__imagen">
-            <img class="foto__producto" src="img/Productos/producto6.jpg" alt="">
+            <img class="foto__producto" src="../img/Productos/producto6.jpg" alt="">
         </div>
         <div class="tarjeta-producto__info">
             <p class="nombre__producto">Zapatos - Niña Buenita</p>
@@ -121,7 +121,7 @@ include_once("Menu/Cabecera.php");
     </div>
     <div class="tarjetas-productos box7" onclick="verDetalle(this)">
         <div class="tarjeta-producto__imagen">
-            <img class="foto__producto" src="img/Productos/producto7.jpg" alt="">
+            <img class="foto__producto" src="../img/Productos/producto7.jpg" alt="">
         </div>
         <div class="tarjeta-producto__info">
             <p class="nombre__producto">Saco - Matrix</p>
@@ -131,7 +131,7 @@ include_once("Menu/Cabecera.php");
     </div>
     <div class="tarjetas-productos box8" onclick="verDetalle(this)">
         <div class="tarjeta-producto__imagen">
-            <img class="foto__producto" src="img/Productos/producto8.jpg" alt="">
+            <img class="foto__producto" src="../img/Productos/producto8.jpg" alt="">
         </div>
         <div class="tarjeta-producto__info">
             <p class="nombre__producto">Saco - Madam</p>
@@ -141,7 +141,7 @@ include_once("Menu/Cabecera.php");
     </div>
     <div class="tarjetas-productos box9" onclick="verDetalle(this)">
         <div class="tarjeta-producto__imagen">
-            <img class="foto__producto" src="img/Productos/producto9.jpg" alt="">
+            <img class="foto__producto" src="../img/Productos/producto9.jpg" alt="">
         </div>
         <div class="tarjeta-producto__info">
             <p class="nombre__producto">Buzo - Rubenchezco</p>
@@ -151,7 +151,7 @@ include_once("Menu/Cabecera.php");
     </div>
     <div class="tarjetas-productos box10" onclick="verDetalle(this)">
         <div class="tarjeta-producto__imagen">
-            <img class="foto__producto" src="img/Productos/producto10.jpg" alt="">
+            <img class="foto__producto" src="../img/Productos/producto10.jpg" alt="">
         </div>
         <div class="tarjeta-producto__info">
             <p class="nombre__producto">Pijama - Pinto</p>
@@ -161,7 +161,7 @@ include_once("Menu/Cabecera.php");
     </div>
     <div class="tarjetas-productos box10" onclick="verDetalle(this)">
         <div class="tarjeta-producto__imagen">
-            <img class="foto__producto" src="img/Productos/Producto1.jpeg" alt="">
+            <img class="foto__producto" src="../img/Productos/Producto1.jpeg" alt="">
         </div>
         <div class="tarjeta-producto__info">
             <p class="nombre__producto">Saco - Robertiñio</p>
@@ -171,7 +171,7 @@ include_once("Menu/Cabecera.php");
     </div>
     <div class="tarjetas-productos box10" onclick="verDetalle(this)">
         <div class="tarjeta-producto__imagen">
-            <img class="foto__producto" src="img/Productos/Producto2.jpeg" alt="">
+            <img class="foto__producto" src="../img/Productos/Producto2.jpeg" alt="">
         </div>
         <div class="tarjeta-producto__info">
             <p class="nombre__producto">Vestido - princesita</p>
@@ -181,7 +181,7 @@ include_once("Menu/Cabecera.php");
     </div>
     <div class="tarjetas-productos box10" onclick="verDetalle(this)">
         <div class="tarjeta-producto__imagen">
-            <img class="foto__producto" src="img/Productos/Producto3.jpeg" alt="">
+            <img class="foto__producto" src="../img/Productos/Producto3.jpeg" alt="">
         </div>
         <div class="tarjeta-producto__info">
             <p class="nombre__producto">Vestido - Oro</p>
@@ -191,7 +191,7 @@ include_once("Menu/Cabecera.php");
     </div>
     <div class="tarjetas-productos box10" onclick="verDetalle(this)">
         <div class="tarjeta-producto__imagen">
-            <img class="foto__producto" src="img/Productos/Producto4.jpeg" alt="">
+            <img class="foto__producto" src="../img/Productos/Producto4.jpeg" alt="">
         </div>
         <div class="tarjeta-producto__info">
             <p class="nombre__producto">Saco - Capitan Azul</p>
@@ -201,5 +201,5 @@ include_once("Menu/Cabecera.php");
     </div>
 </div>
 <?php
-include_once("Menu/Pie.php")
+include_once("../estructura/Pie.php")
 ?>

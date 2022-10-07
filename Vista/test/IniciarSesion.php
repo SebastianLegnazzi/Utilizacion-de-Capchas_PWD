@@ -1,7 +1,7 @@
 <?php
-include_once("Menu/Cabecera.php");
+include_once("../estructura/Cabecera.php");
 ?>
-<link rel="stylesheet" href="css/IniciarSesion.css">
+<link rel="stylesheet" href="../css/IniciarSesion.css">
 <div class="modal modal-signin position-static d-block py-5" tabindex="-1" role="dialog" id="modalSignin">
     <div class="modal-dialog" role="document">
         <div class="modal-content rounded-4 shadow">
@@ -33,7 +33,7 @@ include_once("Menu/Cabecera.php");
         </div>
     </div>
 </div>
-<script src="js/validarCamposVacios.js"></script>
+<script src="../js/validarCamposVacios.js"></script>
 <?php
-include_once("Menu/Pie.php")
+include_once("../estructura/Pie.php")
 ?>
