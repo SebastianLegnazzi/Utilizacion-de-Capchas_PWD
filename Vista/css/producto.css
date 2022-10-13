@@ -22,10 +22,7 @@ h1 {
 }
 
 hr {
-    width: 50%;
-    height: 2px;
-    background-color: rgb(247, 0, 227);
-    border: none;
+    border: 1px solid rgb(255, 173, 57);
     margin: 25px auto;
 }
 
