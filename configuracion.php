@@ -14,6 +14,8 @@ include_once($ROOT.'Util/funciones.php'); //Trae las funciones del script funcio
 
 
 
+
+
 // Variable que define la pagina de autenticacion del proyecto
 $INICIO = "Location:http://".$_SERVER['HTTP_HOST']."/$PROYECTO/vista/login/login.php";
 

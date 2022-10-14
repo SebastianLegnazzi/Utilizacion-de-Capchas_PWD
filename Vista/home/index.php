@@ -230,12 +230,28 @@ include_once("../estructura/Cabecera.php")
             </div>
             <div class="lead text-start fs-6 col-md-4 mt-4">
             <h2 align="center">MTCaptcha</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum rem dolore cum dolorem totam eos excepturi consequuntur, repudiandae dolores beatae quod tempora illo voluptate iusto. Maxime ratione quibusdam temporibus dolores.
+            
+            <p>
+                MTCaptcha sepresenta como una alternativa a google porporcionando un servicio muy parecido
+                pero con pequeña diferencias y mejoras.
+            </p>
+            <p>
+                MTCaptcha ademas de ofrecer los clasicos captcha de imagen, tambien permite que el captcha sea invisible para la mayoria de usuarios mas limpia, investigaciones han demostrado que el captcha aumenta la friccion que tiene el usuario ,en las transacciones en linea y los rechazos, en 10 segundos.  
+            </p>
+            <p>
+                Esto lo hace medianet Adaptive Complexity respaldado por un algoritmo de riesgo avanzado para reducir la frustracion de los usuarios reales y reduce sustancialmente la tasa de rebote.
+            </p>
+            <p>
+                este captcha invisible o de baja friccion consite en un captcha totalmente invisible para la mayoria de los usuarios y solo se muestra cuando el motor de riesgo adaptativo
+                de MTCaptcha detecta algun nivel de riesgo. Esto reduce significativamente la friccion para los usuarios reales, lo que da como resultado transacciones
+                mas existosas y dificulta las cosas para los bot.
+            </p>
+            <p>
+                el motor de riesgo adaptativo monitoria continuamente el entorno de la red y los patrones de uso para ajustar la sensibilidad y las puntuaciones de riesgo.
+            </p>
             </div>
         </div>
-        <div class="lead text-start fs-6 mt-4">
-            <p>Google ha sacado en los últimos años una versión mejorada de su reconocido reCaptcha, el cual junta</p>
-        </div>
+        
     </div>
     </div>
 </div>
