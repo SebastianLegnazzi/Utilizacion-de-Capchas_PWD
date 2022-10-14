@@ -209,7 +209,12 @@ include_once("../estructura/Cabecera.php")
     <div id="comparacion">
         <div class="display-4 text-warning texto-titulo">Comparación</div>
         <div class="row text-center">
-            <div class="lead text-start fs-6 col-md-4 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum rem dolore cum dolorem totam eos excepturi consequuntur, repudiandae dolores beatae quod tempora illo voluptate iusto. Maxime ratione quibusdam temporibus dolores.
+            <div class="lead text-start fs-6 col-md-4 mt-4">
+            <h2 align="center">reCAPTCHA v2</h2>
+            <p>Muchos sitios web siguen utilizando reCaptcha v2, que fue lanzada en 2014. Si el comportamiento de un usuario es sospechoso, reCaptcha v2 enviará un desafío que el visitante debe resolver para probar que es humano.</p>
+            <p>Todos nos encontramos familiarizados con las varias versiones de reCaptcha v2. A veces, todo lo que se necesita hacer es tildar una cajita que diga “No soy un robot”. En otras ocasiones, reCaptcha desafiará al usuario con alguno de los distintos tipos de Captcha mencionados previamente en esta página.</p>
+            <p>ReCaptcha v2 está basado en un “Sistema de análisis de riesgo avanzado” que depende bastante de las cookies. Si el usuario está navegando en la web usando Chrome, o se ha logeado en una cuenta de Google por un rato, seguramente solo tendrán que tildar una cajita. Por el otro lado, un usuario que utilice Firefox y haya deshabilitado las cookies de terceros (debido a la gran preocupación creciente de los usuarios por su privacidad online) es más seguro que tenga que realizar algún desafío difícil de reCaptcha v2, que degradará su experiencia de usuario y reducirá las tasas de conversión.</p>
+            <p>Adicionalmente, debido a la ubicuidad de reCaptcha v2, los ciberdelincuentes han encontrado soluciones automatizadas cada vez más eficientes para eludir incluso los desafíos más difíciles de reCAPTCHA v2.</p>
             </div>
             <div class="lead text-start fs-6 col-md-4 mt-4">
                 <h2 align="center">reCAPTCHA v3</h2>
@@ -220,12 +225,18 @@ include_once("../estructura/Cabecera.php")
                     Este nuevo sistema <strong>le asignará a cada usuario una puntuación diferente </strong>, clasificándolos del 0.0 al 1.0 en orden de más posible a menos posible de que sea un bot. La puntuación se basará en diferentes tipos de interacciones que realicen los usuarios, que van <strong> desde el movimiento del ratón al tiempo que pasan en cada sección de la web o los clicks que se realizan </strong>.
                 </p>
                 <p>
-                    reCaptcha v3 usará un umbral de 0.5 puntos, y <strong> visitantes con una puntuación inferior necesitarán demostrar que es humano </strong> como pasa ahora cuando el automatismo falla. Sin embargo, los usuarios de cada web podrán modificar este umbral
+                    reCaptcha v3 permite que el umbral de detección de bots sea administrado por el desarrollador de la página, así como poder bloquear a usuarios con un puntaje menor a 0.2 o enviarles una prueba reCaptcha a los usuarios con menos de 0.5 para que confirmen su autenticidad.
                 </p>
             </div>
-            <div class="lead text-start fs-6 col-md-4 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum rem dolore cum dolorem totam eos excepturi consequuntur, repudiandae dolores beatae quod tempora illo voluptate iusto. Maxime ratione quibusdam temporibus dolores.
+            <div class="lead text-start fs-6 col-md-4 mt-4">
+            <h2 align="center">MTCaptcha</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum rem dolore cum dolorem totam eos excepturi consequuntur, repudiandae dolores beatae quod tempora illo voluptate iusto. Maxime ratione quibusdam temporibus dolores.
             </div>
         </div>
+        <div class="lead text-start fs-6 mt-4">
+            <p>Google ha sacado en los últimos años una versión mejorada de su reconocido reCaptcha, el cual junta</p>
+        </div>
+    </div>
     </div>
 </div>
 <?php
