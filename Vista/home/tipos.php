@@ -28,7 +28,7 @@ include_once("../estructura/Cabecera.php")
             <hr class="m-2" style="width: 30%;">
             <div class="mtcaptcha"></div>
             <div class="d-flex align-items-end" style="height: 100%;">
-                <a class="link-warning" href="">Como instalar</a>
+                <a class="btn btn-warning" href="">Como instalar</a>
             </div>
         </div>
         <div class="lead text-center fs-6 col-md-4 mt-4 d-flex flex-column align-items-center">
@@ -36,7 +36,7 @@ include_once("../estructura/Cabecera.php")
             <hr class="m-2" style="width: 30%;">
             <div class="g-recaptcha mt-4 ms-3" data-sitekey="6Lf95XwiAAAAANd2Ey0ue87QCWiiD6_A17eONhTX"></div>
             <div class="d-flex align-items-end" style="height: 100%;">
-                <a class="link-warning" href="">Como instalar</a>
+                <a class="btn btn-warning" href="">Como instalar</a>
             </div>
         </div>
         <div class="lead text-center fs-6 col-md-4 mt-4 d-flex flex-column align-items-center">
@@ -44,7 +44,7 @@ include_once("../estructura/Cabecera.php")
             <hr class="m-2" style="width: 30%;">
             <p class="text-start mt-3">No tiene un aspecto visual ya que google determina a traves de un algoritmo si es una persona</p>
             <div class="d-flex align-items-end" style="height: 100%;">
-                <a class="link-warning" href="">Como instalar</a>
+                <a class="btn btn-warning" href="">Como instalar</a>
             </div>
         </div>
     </div>

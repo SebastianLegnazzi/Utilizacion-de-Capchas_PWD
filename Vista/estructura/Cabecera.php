@@ -16,7 +16,7 @@ include "../../configuracion.php";
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example" id="header">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Third navbar example" id="header">
     <div class="container-fluid">
       <span class="navbar-brand text-white" style="font-family: 'Chivo', sans-serif;">| Clases Utiles - Utilizacion de Capcha |</span>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +32,13 @@ include "../../configuracion.php";
             <a class="nav-link text-white btn btn-primary m-2" href="../home/tipos.php" style="font-family: 'Chivo', sans-serif;">Tipos</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link text-white btn btn-primary m-2" href="../home/instalacion.php" style="font-family: 'Chivo', sans-serif;">Instalacion</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link text-white btn btn-primary m-2" href="../test/index.php" style="font-family: 'Chivo', sans-serif;">Prueba</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white btn btn-primary m-2" href="../home/documentacion.php" style="font-family: 'Chivo', sans-serif;">Documentacion</a>
           </li>
         </ul>
       </div>
