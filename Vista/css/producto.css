@@ -1,6 +1,9 @@
 /* @import url("general.css"); */
 
 /* General */
+
+html { scroll-behavior: smooth; }
+
 body {
     background-color: rgb(70, 70, 70);
 }
