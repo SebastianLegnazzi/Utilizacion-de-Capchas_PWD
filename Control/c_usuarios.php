@@ -1,5 +1,5 @@
 <?php
-class c_crearUsuario
+class c_usuarios
 {
     function cargar($datos)
     {

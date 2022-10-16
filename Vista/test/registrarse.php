@@ -2,13 +2,7 @@
 include_once("../estructura/Cabecera.php");
 ?>
 <script src="../js/validarContraseñaIguales.js"></script>
-<script>
-    var mtcaptchaConfig = {
-      "sitekey": "MTPublic-eU0Pdq5Q0", "autoFormValidate": true, "theme": "neowhite"
-     };
-   (function(){var mt_service = document.createElement('script');mt_service.async = true;mt_service.src = 'https://service.mtcaptcha.com/mtcv1/client/mtcaptcha.min.js';(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(mt_service);
-   var mt_service2 = document.createElement('script');mt_service2.async = true;mt_service2.src = 'https://service2.mtcaptcha.com/mtcv1/client/mtcaptcha2.min.js';(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(mt_service2);}) ();
- </script>
+<script src="https://www.google.com/recaptcha/api.js" async defer> </script>
 <div class="container-fluid">
     <div class="container col-md-5">
         <form action="accionRegistrarse.php" method="get" class="needs-validation row-md-4 text-white mb-4" novalidate>
@@ -44,7 +38,7 @@ include_once("../estructura/Cabecera.php");
                 <div class="valid-feedback password-correcta">
                     Correcto!
                 </div>
-                <div class="mtcaptcha"></div>
+                <div class="g-recaptcha m-4" data-sitekey="6Lf95XwiAAAAANd2Ey0ue87QCWiiD6_A17eONhTX"></div>
             </div>
             <input type="submit" name="boton_enviar" onclick="return verificarContraseñaIgual(document.getElementById('input_contraseña'), document.getElementById('input_contraseñaRep'))" class="btn btn-dark mt-2" id="boton_enviar" value="Cargar">
         </form>

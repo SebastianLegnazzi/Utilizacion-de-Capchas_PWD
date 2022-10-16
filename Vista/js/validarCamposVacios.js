@@ -8,7 +8,7 @@
     // Loop over them and prevent submission
     Array.from(forms).forEach(form => {
         form.addEventListener('submit', event => {
-            if (!form.checkValidity() || !contraseñaIgUsuario()) {
+            if (!form.checkValidity()) {
                 event.preventDefault()
                 event.stopPropagation()
             }
@@ -17,24 +17,3 @@
         }, false)
     })
 })()
-
-function contraseñaIgUsuario() {
-    let input_contraseña, input_usuario, distintos = true
-    input_usuario = document.getElementById("input_usuario");
-    input_contraseña = document.getElementById("input_contraseña");
-    divAlerta = document.getElementsByClassName("contraseña_usuario_iguales");
-    console.log(divAlerta)
-    if (input_contraseña.value == input_usuario.value) {
-        distintos = false;
-        input_usuario.style = "border: 1px solid red";
-        input_contraseña.style = "border: 1px solid red";
-        divAlerta[0].style = "display: block; color: red;";
-        divAlerta[1].style = "display: block; color: red;";
-    } else {
-        input_usuario.style = "border: 1px solid green";
-        input_contraseña.style = "border: 1px solid green";
-        divAlerta[0].style = "display: none;";
-        divAlerta[1].style = "display: none;";
-    }
-    return distintos;
-}

@@ -3,9 +3,9 @@
 <?php
 include_once("../estructura/Cabecera.php");
 $metodo = data_submitted();
-$objPersona = new c_crearUsuario();
+$objPersona = new c_usuarios();
 $objCaptcha = new c_testCaptchas();
-if ($objCaptcha->mtCaptcha($metodo["mtcaptcha-verifiedtoken"])) {
+if ($objCaptcha->reCaptchav2($metodo["g-recaptcha-response"])) {
     if ($objPersona->cargar($metodo)) {
 ?>
         <script>
@@ -50,7 +50,7 @@ if ($objCaptcha->mtCaptcha($metodo["mtcaptcha-verifiedtoken"])) {
         })
 
         function redireccionarPagina() {
-            location.href = "index.php"
+            location.href = "registrarse.php"
         }
         setTimeout("redireccionarPagina()", 1450);
     </script>
