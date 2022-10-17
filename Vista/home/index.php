@@ -9,7 +9,7 @@ include_once("../estructura/Cabecera.php")
 
 <div class="container-fluid pe-5 ps-5 text-center text-light">
     <div id="que-es">
-        <div class="display-4 text-warning texto-titulo">¿Qué es un captcha?</div>
+        <div class="display-4 text-warning texto-titulo">¿Qué es un Captcha?</div>
         <div class="lead text-start fs-6 mt-4">
             <p>Un <strong>CAPTCHA</strong> (Completely Automated Public <i> Turing test </i> to tell Computers and Humans Apart: test de Turing público y automático para distinguir a los ordenadores de los humanos) es un tipo de medida de seguridad que requiere de una autenticación normalmente pregunta-respuesta. Un CAPTCHA te protege del SPAM y del descifrado de contraseñas pidiéndote que completes una prueba que demuestra si eres humano y no un ordenador que intenta acceder a una cuenta protegida con contraseña.</p>
             <p>Un test de Turing evalúa la capacidad que tiene un ordenador para imitar el comportamiento humano. Alan Turing, uno de los primeros pioneros de la informática, desarrolló el concepto del test de Turing en 1950. Un programa informático "pasa el test de Turing" si su funcionamiento durante test no se puede distinguir del de un humano, si actúa como lo haría un ser humano. Un test de Turing no depende de que las respuestas sean correctas, sino de lo "humanas" que suenen dichas respuestas, independientemente de que sean correctas o no.</p>
@@ -34,10 +34,10 @@ include_once("../estructura/Cabecera.php")
                         <h2 class="display-6 text-center bg-warning">TEXTO</h2>
                         <div class="col-md-7">
                             <div class="card-body">
-                                <p>Los captcha textuales son los más usuales y usan palabras o combinaciones aleatorias entre dígitos y letras. También pueden incluir variaciones entre minúsculas y mayúsculas. </p>
-                                <p>Si bien este tipo de captcha puede ser inquebrantable para los bots, también suele ser confuso de interpretar para los humanos cuando hay demasiada distorsión en las imágenes. </p>
+                                <p>Los Captcha textuales son los más usuales y usan palabras o combinaciones aleatorias entre dígitos y letras. También pueden incluir variaciones entre minúsculas y mayúsculas. </p>
+                                <p>Si bien este tipo de Captcha puede ser inquebrantable para los bots, también suele ser confuso de interpretar para los humanos cuando hay demasiada distorsión en las imágenes. </p>
                                 <p>
-                                    <strong>Ejemplo de captcha de texto:</strong>
+                                    <strong>Ejemplo de Captcha de texto:</strong>
                                     Aquí indica que, para poder procesar la solicitud, el usuario deberá llenar el espacio con las letras que se leen en azul. Cuando se han tecleado correctamente, el usuario puede continuar con su proceso, que en este caso es crear una cuenta.
                                 </p>
                             </div>
@@ -52,11 +52,11 @@ include_once("../estructura/Cabecera.php")
                         <h2 class="display-6 text-center bg-warning">VISUALES</h2>
                         <div class="col-md-9">
                             <div class="card-body">
-                                <p>Los captcha basados en imágenes fueron desarrollados para reemplazar a los captcha de texto. Este tipo de sistema hace uso de imágenes con elementos reconocibles y requieren que el usuario distinga elementos presentes en fotografías o seleccione las imágenes similares entre sí (o aquellos que son disímiles, por ejemplo: 5 fotos de perros y 1 de un gato o viceversa).</p>
-                                <p>Este captcha es mucho más eficaz que el captcha de texto, ya que su nivel de dificultad es mayor (para los bots), pues supone reconocimiento de imágenes y clasificación semántica.</p>
+                                <p>Los Captcha basados en imágenes fueron desarrollados para reemplazar a los Captcha de texto. Este tipo de sistema hace uso de imágenes con elementos reconocibles y requieren que el usuario distinga elementos presentes en fotografías o seleccione las imágenes similares entre sí (o aquellos que son disímiles, por ejemplo: 5 fotos de perros y 1 de un gato o viceversa).</p>
+                                <p>Este Captcha es mucho más eficaz que el Captcha de texto, ya que su nivel de dificultad es mayor (para los bots), pues supone reconocimiento de imágenes y clasificación semántica.</p>
                                 <p>
-                                    <strong>Ejemplo de captcha visual:</strong>
-                                    Este tipo de captcha consiste en seleccionar imágenes de una misma categoría. En este caso pide «seleccione todas las imágenes donde hayan botes». Cuando se hayan elegido todas las imágenes indicadas, puede hacer clic en el botón para verificar que no es un bot.
+                                    <strong>Ejemplo de Captcha visual:</strong>
+                                    Este tipo de Captcha consiste en seleccionar imágenes de una misma categoría. En este caso pide «seleccione todas las imágenes donde hayan botes». Cuando se hayan elegido todas las imágenes indicadas, puede hacer clic en el botón para verificar que no es un bot.
                                 </p>
                             </div>
                         </div>
@@ -70,10 +70,10 @@ include_once("../estructura/Cabecera.php")
                         <h2 class="display-6 text-center bg-warning">PREGUNTAS</h2>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <p>El captcha también puede recurrir a preguntas lógicas o de cultura general; aunque este tipo de captcha no es tan común, suele ser realmente sencillo de responder para los humanos, por lo que no se requiere ningún tipo de conocimiento extraordinario. </p>
+                                <p>El Captcha también puede recurrir a preguntas lógicas o de cultura general; aunque este tipo de Captcha no es tan común, suele ser realmente sencillo de responder para los humanos, por lo que no se requiere ningún tipo de conocimiento extraordinario. </p>
                                 <p>
-                                    <strong>Ejemplo de captcha de preguntas:</strong>
-                                    Comúnmente este captcha pregunta algo que prácticamente es de conocimiento universal o formula una pregunta en la que la respuesta no importa, sino la acción de seleccionar de entre las opciones; como en este ejemplo, que indica «haga clic en su color favorito». Con esa breve acción el sistema confirma que el usuario no es un robot.
+                                    <strong>Ejemplo de Captcha de preguntas:</strong>
+                                    Comúnmente este Captcha pregunta algo que prácticamente es de conocimiento universal o formula una pregunta en la que la respuesta no importa, sino la acción de seleccionar de entre las opciones; como en este ejemplo, que indica «haga clic en su color favorito». Con esa breve acción el sistema confirma que el usuario no es un robot.
                                 </p>
                             </div>
                         </div>
@@ -87,10 +87,10 @@ include_once("../estructura/Cabecera.php")
                         <h2 class="display-6 text-center bg-warning">PROBLEMAS MATEMÁTICOS</h2>
                         <div class="col-md-9">
                             <div class="card-body">
-                                <p>Este tipo de captcha les solicita a los usuarios que resuelvan operaciones matemáticas muy simples. También tiene una variación al pedir que completen una secuencia de varios números relacionados (por ejemplo: 2, 2, 4, 4, 6, __, __, __). </p>
+                                <p>Este tipo de Captcha les solicita a los usuarios que resuelvan operaciones matemáticas muy simples. También tiene una variación al pedir que completen una secuencia de varios números relacionados (por ejemplo: 2, 2, 4, 4, 6, __, __, __). </p>
                                 <p>
-                                    <strong>Ejemplo de captcha con problema matemático:</strong>
-                                    En este tipo de captcha el usuario tiene que hacer una operación simple y poner el resultado.
+                                    <strong>Ejemplo de Captcha con problema matemático:</strong>
+                                    En este tipo de Captcha el usuario tiene que hacer una operación simple y poner el resultado.
                                 </p>
                             </div>
                         </div>
@@ -106,8 +106,8 @@ include_once("../estructura/Cabecera.php")
                             <div class="card-body">
                                 <p>Al intentar crear una cuenta en alguna plataforma, en vez de solicitar un nombre de usuario y contraseña, existe la posibilidad de registrarte y acceder con tu cuenta de Gmail o Facebook. Este sistema resulta muy eficaz, ya que evita que los bots accedan, pues no tienen dichas cuentas personales. </p>
                                 <p>
-                                    <strong>Ejemplo de captcha de redes sociales:</strong>
-                                    Este captcha se ha popularizado mucho en registros a capacitaciones, eventos, webinars, etc.
+                                    <strong>Ejemplo de Captcha de redes sociales:</strong>
+                                    Este Captcha se ha popularizado mucho en registros a capacitaciones, eventos, webinars, etc.
                                 </p>
                             </div>
                         </div>
@@ -121,10 +121,10 @@ include_once("../estructura/Cabecera.php")
                         <h2 class="display-6 text-center bg-warning">JUEGO DE PALABRAS</h2>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <p>Este tipo de captcha muestra una serie de instrucciones que a los bots les resulta difícil comprender. Por ejemplo, muestra un color (el usuario debe escribir el nombre) o proporciona una palabra (y la persona debe volver a escribirla), entre otros juegos similares</p>
+                                <p>Este tipo de Captcha muestra una serie de instrucciones que a los bots les resulta difícil comprender. Por ejemplo, muestra un color (el usuario debe escribir el nombre) o proporciona una palabra (y la persona debe volver a escribirla), entre otros juegos similares</p>
                                 <p>
-                                    <strong>Ejemplo de captcha de juego de palabras:</strong>
-                                    Existen muchas formas para hacer juegos de palabras en captchas; en este caso hay dos palabras tachadas y borrosas. Solamente un humano podría detectarlas y escribirlas.
+                                    <strong>Ejemplo de Captcha de juego de palabras:</strong>
+                                    Existen muchas formas para hacer juegos de palabras en Captchas; en este caso hay dos palabras tachadas y borrosas. Solamente un humano podría detectarlas y escribirlas.
                                 </p>
                             </div>
                         </div>
@@ -138,10 +138,10 @@ include_once("../estructura/Cabecera.php")
                         <h2 class="display-6 text-center bg-warning">AUDIO</h2>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <p>Como una forma de brindar acceso a los usuarios con discapacidad visual, estos captchas suelen ofrecer una alternativa de audio de una serie de letras o números que el usuario debe ingresar.</p>
+                                <p>Como una forma de brindar acceso a los usuarios con discapacidad visual, estos Captchas suelen ofrecer una alternativa de audio de una serie de letras o números que el usuario debe ingresar.</p>
                                 <p>
-                                    <strong>Ejemplo de captcha de audio:</strong>
-                                    Este ejemplo ofrece opciones visuales y de audio; aunque algunos captchas son simplemente de audio.
+                                    <strong>Ejemplo de Captcha de audio:</strong>
+                                    Este ejemplo ofrece opciones visuales y de audio; aunque algunos Captchas son simplemente de audio.
                                 </p>
                             </div>
                         </div>
@@ -155,10 +155,10 @@ include_once("../estructura/Cabecera.php")
                         <h2 class="display-6 text-center bg-warning">LÍMITE DE TIEMPO</h2>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <p>Los captcha también pueden requerir un poco de destreza por parte de los humanos, pero este tipo de sistema registra la cantidad de tiempo que un usuario tarda en completar un formulario. Si lo hace muy rápido, lo detectara como máquina.</p>
+                                <p>Los Captcha también pueden requerir un poco de destreza por parte de los humanos, pero este tipo de sistema registra la cantidad de tiempo que un usuario tarda en completar un formulario. Si lo hace muy rápido, lo detectara como máquina.</p>
                                 <p>
-                                    <strong>Ejemplo de captcha de límite de tiempo:</strong>
-                                    El conteo del tiempo regularmente no se ve en el captcha, se trata de una configuración oculta; pero si el sistema detecta que la respuesta fue muy rápida, lo considerará como un robot; por el contrario, si el usuario tarda mucho, el captcha hace que expire la sesión, como en este ejemplo.
+                                    <strong>Ejemplo de Captcha de límite de tiempo:</strong>
+                                    El conteo del tiempo regularmente no se ve en el Captcha, se trata de una configuración oculta; pero si el sistema detecta que la respuesta fue muy rápida, lo considerará como un robot; por el contrario, si el usuario tarda mucho, el Captcha hace que expire la sesión, como en este ejemplo.
                                 </p>
                             </div>
                         </div>
@@ -172,10 +172,10 @@ include_once("../estructura/Cabecera.php")
                         <h2 class="display-6 text-center bg-warning">LÚDICOS</h2>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <p>También hay desarrolladores que apuestan a lo diferente y han creado captchas para que las personas puedan clasificar objetos o armar rompecabezas.</p>
+                                <p>También hay desarrolladores que apuestan a lo diferente y han creado Captchas para que las personas puedan clasificar objetos o armar rompecabezas.</p>
                                 <p>
-                                    <strong>Ejemplo de captcha lúdico:</strong>
-                                    Hay captchas llamativos y dinámicos como en este ejemplo donde el sistema pide «verificar que el usuario existe», para lo cual tiene que «arrastrar las baquetas hacia el tambor».
+                                    <strong>Ejemplo de Captcha lúdico:</strong>
+                                    Hay Captchas llamativos y dinámicos como en este ejemplo donde el sistema pide «verificar que el usuario existe», para lo cual tiene que «arrastrar las baquetas hacia el tambor».
                                 </p>
                             </div>
                         </div>
@@ -189,11 +189,11 @@ include_once("../estructura/Cabecera.php")
                         <h2 class="display-6 text-center bg-warning">CAMPOS OCULTOS</h2>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <p>Este captcha funciona más como una trampa de bots, ya que, al crear tantos campos ocultos, los bots se programan para completar todos los campos que encuentran, incluso los que no existen. Esta es una manera fácil de detectar un comportamiento no humano. </p>
-                                <p>La gran ventaja de este tipo de captchas es que no interrumpen la navegación; incluso, en la mayoría de las ocasiones, los usuarios ni siquiera se percatan de que están allí.</p>
+                                <p>Este Captcha funciona más como una trampa de bots, ya que, al crear tantos campos ocultos, los bots se programan para completar todos los campos que encuentran, incluso los que no existen. Esta es una manera fácil de detectar un comportamiento no humano. </p>
+                                <p>La gran ventaja de este tipo de Captchas es que no interrumpen la navegación; incluso, en la mayoría de las ocasiones, los usuarios ni siquiera se percatan de que están allí.</p>
                                 <p>
-                                    <strong>Ejemplo de captcha con campos ocultos:</strong>
-                                    Cuando se trata de campos ocultos el sistema identifica de antemano un comportamiento humano y permite cierta acción, por ejemplo, descargar un archivo. Sin embargo, si el sistema detecta un comportamiento robótico (por ejemplo, una descarga de un volumen de archivo), entonces podría arrojar un captcha como el que vemos en la imagen.
+                                    <strong>Ejemplo de Captcha con campos ocultos:</strong>
+                                    Cuando se trata de campos ocultos el sistema identifica de antemano un comportamiento humano y permite cierta acción, por ejemplo, descargar un archivo. Sin embargo, si el sistema detecta un comportamiento robótico (por ejemplo, una descarga de un volumen de archivo), entonces podría arrojar un Captcha como el que vemos en la imagen.
                                 </p>
                             </div>
                         </div>
@@ -214,7 +214,7 @@ include_once("../estructura/Cabecera.php")
             <p>Muchos sitios web siguen utilizando reCaptcha v2, que fue lanzada en 2014. Si el comportamiento de un usuario es sospechoso, reCaptcha v2 enviará un desafío que el visitante debe resolver para probar que es humano.</p>
             <p>Todos nos encontramos familiarizados con las varias versiones de reCaptcha v2. A veces, todo lo que se necesita hacer es tildar una cajita que diga “No soy un robot”. En otras ocasiones, reCaptcha desafiará al usuario con alguno de los distintos tipos de Captcha mencionados previamente en esta página.</p>
             <p>ReCaptcha v2 está basado en un “Sistema de análisis de riesgo avanzado” que depende bastante de las cookies. Si el usuario está navegando en la web usando Chrome, o se ha logeado en una cuenta de Google por un rato, seguramente solo tendrán que tildar una cajita. Por el otro lado, un usuario que utilice Firefox y haya deshabilitado las cookies de terceros (debido a la gran preocupación creciente de los usuarios por su privacidad online) es más seguro que tenga que realizar algún desafío difícil de reCaptcha v2, que degradará su experiencia de usuario y reducirá las tasas de conversión.</p>
-            <p>Adicionalmente, debido a la ubicuidad de reCaptcha v2, los ciberdelincuentes han encontrado soluciones automatizadas cada vez más eficientes para eludir incluso los desafíos más difíciles de reCAPTCHA v2.</p>
+            <p>Adicionalmente, debido a la ubicuidad de reCaptcha v2, los ciberdelincuentes han encontrado soluciones automatizadas cada vez más eficientes para eludir incluso los desafíos más difíciles de reCaptcha v2.</p>
             </div>
             <div class="lead text-start fs-6 col-md-4 mt-4">
                 <h2 align="center">reCAPTCHA v3</h2>
@@ -229,26 +229,19 @@ include_once("../estructura/Cabecera.php")
                 </p>
             </div>
             <div class="lead text-start fs-6 col-md-4 mt-4">
-            <h2 align="center">MTCaptcha</h2>
-            
-            <p>
-                MTCaptcha sepresenta como una alternativa a google porporcionando un servicio muy parecido
-                pero con pequeña diferencias y mejoras.
-            </p>
-            <p>
-                MTCaptcha ademas de ofrecer los clasicos captcha de imagen, tambien permite que el captcha sea invisible para la mayoria de usuarios mas limpia, investigaciones han demostrado que el captcha aumenta la friccion que tiene el usuario ,en las transacciones en linea y los rechazos, en 10 segundos.  
-            </p>
-            <p>
-                Esto lo hace medianet Adaptive Complexity respaldado por un algoritmo de riesgo avanzado para reducir la frustracion de los usuarios reales y reduce sustancialmente la tasa de rebote.
-            </p>
-            <p>
-                este captcha invisible o de baja friccion consite en un captcha totalmente invisible para la mayoria de los usuarios y solo se muestra cuando el motor de riesgo adaptativo
-                de MTCaptcha detecta algun nivel de riesgo. Esto reduce significativamente la friccion para los usuarios reales, lo que da como resultado transacciones
-                mas existosas y dificulta las cosas para los bot.
-            </p>
-            <p>
-                el motor de riesgo adaptativo monitoria continuamente el entorno de la red y los patrones de uso para ajustar la sensibilidad y las puntuaciones de riesgo.
-            </p>
+                <h2 align="center">MTCaptcha</h2>
+                <p>
+                    MTCaptcha se presenta como una alternativa a google porporcionando un servicio muy parecido
+                    pero con pequeñas diferencias y mejoras.
+                </p>
+                <p>
+                    MTCaptcha además de ofrecer los clásicos Captcha de imagen, también permite que el Captcha sea invisible para la mayoría de usuarios y solo se muestra cuando el motor de riesgo adaptativo de MTCaptcha detecta algun nivel de riesgo. <br>
+                    Este motor Adaptive Complexity, además de estar respaldado por este algoritmo de riesgo avanzado que reduce la frustración de los usuarios también reduce sustancialmente la tasa de rebote. <br>
+                    Investigaciones han demostrado que el Captcha común aumenta la fricción que tiene el usuario en las transacciones en línea y los rechazos en 10 segundos. Gracias al motor del MTCaptcha se reduce significativamente la fricción para los usuarios reales, lo que da como resultado transacciones más existosas y dificulta las cosas para los bot.
+                </p>
+                <p>
+                    El motor de riesgo adaptativo monitoria continuamente el entorno de la red y los patrones de uso para ajustar la sensibilidad y las puntuaciones de riesgo.
+                </p>
             </div>
         </div>
         
