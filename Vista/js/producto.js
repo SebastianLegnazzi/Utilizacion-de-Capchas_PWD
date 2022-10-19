@@ -29,7 +29,12 @@ function sumarCarrito() {
 function borrarProducto(numero) {
     let tabla = document.getElementById("lista__carrito");
     tabla.deleteRow(numero);
-    alert("Producto eliminado!");
+    Swal.fire({
+        icon: 'success',
+        title: 'Producto eliminado!',
+        showConfirmButton: false,
+        timer: 1000
+    })
     sumCompra();
 }
 

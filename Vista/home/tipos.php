@@ -21,7 +21,7 @@ include_once("../estructura/Cabecera.php")
 <!-- Script que utiliza reCaptchaV2 para poder visualziarse -->
 <script src="https://www.google.com/recaptcha/api.js" async defer> </script>
 <div class="container text-light mb-5">
-    <div class="display-4 text-warning text-center">Tipos de captchas</div>
+    <div class="display-4 text-warning text-center texto-titulo">Tipos de captchas</div>
     <div class="row">
         <div class="lead text-center fs-6 col-md-4 mt-4 d-flex flex-column align-items-center">
             <div class="display-6 ">MtCaptcha</div>
