@@ -42,6 +42,7 @@ include_once("../estructura/Cabecera.php");
             </div>
             <input type="submit" name="boton_enviar" onclick="return verificarContraseñaIgual(document.getElementById('input_contraseña'), document.getElementById('input_contraseñaRep'))" class="btn btn-dark mt-2" id="boton_enviar" value="Cargar">
         </form>
+        <a href="IniciarSesion.php" class="link-warning">ya tengo cuenta</a>
     </div>
 </div>
 <script src="../js/validarCamposVacios.js"></script>

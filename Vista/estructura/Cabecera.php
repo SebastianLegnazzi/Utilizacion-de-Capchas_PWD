@@ -13,6 +13,8 @@ include "../../configuracion.php";
   <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/producto.css">
   <script src="../js/producto.js"></script>
+  <script src="../alertas/dist/sweetalert2.all.min.js"></script>
+  <link rel="stylesheet" href="../alertas/dist/sweetalert2.min.css">
 </head>
 
 <body>
@@ -36,6 +38,9 @@ include "../../configuracion.php";
           </li>
           <li class="nav-item">
             <a class="nav-link text-white btn btn-primary m-2" href="../test/index.php" style="font-family: 'Chivo', sans-serif;">Prueba</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white btn btn-primary m-2" href="../alertasExplicacion/index.php" style="font-family: 'Chivo', sans-serif;">Alertas</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white btn btn-primary m-2" href="../home/documentacion.php" style="font-family: 'Chivo', sans-serif;">Documentacion</a>

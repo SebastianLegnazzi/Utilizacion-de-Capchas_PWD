@@ -1,6 +1,4 @@
-<script src="../alertas/dist/sweetalert2.all.min.js"></script>
 <script src="../js/iniciarSesion.js"></script>
-<link rel="stylesheet" href="../alertas/dist/sweetalert2.min.css">
 <?php
 include_once("../estructura/Cabecera.php");
 $metodo = data_submitted();

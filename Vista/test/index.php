@@ -19,7 +19,7 @@ include_once("../estructura/Cabecera.php");
         <div id="content__precio__detalle">
             <p id="precio__detalle"></p>
         </div>
-        <div class="content__botones">
+        <div class="content__botones mb-4">
             <button class="btn btn-success me-2" id="detalle__agregar__carrito" onclick="sumarCarrito(); contadorCarrito()">Agregar al Carrito</button>
             <button class="btn btn-danger" id="detalle__cerrar" onclick="cerrarDetalle()">Cerrar</button>
         </div>
