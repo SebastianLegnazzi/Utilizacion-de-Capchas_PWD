@@ -71,6 +71,49 @@ include_once("../estructura/Cabecera.php")
             Como primer paso, tocamos el link mostrado en la imágen anterior que dice "Ver integración del lado del cliente". Una vez dentro de la documentación, buscamos hasta encontrar el siguiente código.
             </p>
             <img src="../img/Inclusión-ReCaptcha-cliente.png" alt="Codigo ReCaptcha PHP" height="300px" width="600px">
+            <br>
+            <p>Este método de inclusión de ReCaptcha es el más simple, ya que solo requeriremos de la inclusión de un Javascript en el <span class="bg-dark"> &lt;head&gt;&lt;/head&gt;</span> de nuestro sitio y de un div con un tag <strong>g-recapthca </strong>. 
+            <br>
+            La línea que utilizaremos en el <span class="bg-dark"> &lt;head&gt;&lt;/head&gt;</span> es: <span class="bg-dark"> &lt;script src="https://www.google.com/recaptcha/api.js" async defer&gt;&lt;/script&gt; </span>
+            <br>
+            Luego, en el <span class="bg-dark"> &lt;form&gt;&lt;/form&gt;</span> con el action POST pegaremos un div que tendrá nuestro Captcha de casilla de verificación "No soy un robot". Lo pegaremos justo antes del botón de envío de la siguiente manera: 
+            <br>
+            <span class="bg-dark"> &lt;form action= "pagina-Que-Recibira-La-Info-Del-ReCaptcha.php" method= "POST"&gt; <br> </span>
+            (Ejemplo input mail junto al ReCaptcha)
+            <br>
+            <span class="bg-dark">
+            &lt;div class="form-group"&gt;
+            &lt;label for="email"&gt;</span> Email <span class="bg-dark">&lt;/label&gt;
+            &lt;input type="email" class="form-control" name="email" placeholder="Email"&gt;
+            &lt;/div&gt;
+            <br>
+            &lt;div class= "g-recaptcha" data-sitekey="Nuestra_llave_de_sitio"&gt;&lt;/div&gt;
+            <br>
+            &lt;/form&gt; </span>
+            <br>
+            Solo cambiaremos la data-sitekey con la que se nos brindó al crear la página con ReCaptcha:
+            </p>
+            <img src="../img/Clave-sitio.png" alt="LLave de sitio">
+            <br>
+            <p>
+            Una vez hecho esto del lado del cliente, procederemos a poner la siguiente información del lado del servidor (a donde el formulario enviará la comprobación del Captcha).
+            </p>
+            <img src="../img/LadoServidor-ReCaptcha.png" alt="Lado servidor ReCaptcha">
+            <br>
+            <p>
+            En la imágen anterior, vemos un ejemplo donde estamos recibiendo el metodo POST del reCaptcha si recibe información de un input mail.
+            <br>
+            <span class="bg-dark">$recaptcha_url</span> = Es la variable que recibirá la URL de google en donde se verificará el ReCaptcha, esta la encontramos en el link "Integración lado del servidor" en la sección Google ReCaptcha donde nos dieron nuestra clave secreta. En la documentación encontramos el apartado de una solicitud API y la URL.
+            <br>
+            <span class="bg-dark">$recaptcha_secret</span> = Tendrá la clave secreta que se nos brindó.
+            </p>
+            <img src="../img/Clave-secreta.png" alt="Link inclusión servidor">
+            <br><br>
+            <img src="../img/Url-POST.png" alt="URL API">
+            <br>
+            <p>
+            En esta imágen también observamos otros parametros que debe contener nuestro servidor como el ya mencionado secret (la clave secreta), la respuesta y la ip.
+            </p>
         </div>
     </div>
 </div>
