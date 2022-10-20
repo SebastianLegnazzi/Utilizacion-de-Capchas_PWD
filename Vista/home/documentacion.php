@@ -16,6 +16,7 @@ include_once("../estructura/Cabecera.php")
         <a target="_blank" href="https://cloud.google.com/recaptcha-enterprise/docs/overview" class="list-group-item list-group-item-action list-group-item-warning">reCaptcha Enterprise 2</a>
         <a target="_blank" href="https://maplink.global/blog/es/que-es-recaptcha-y-amenazas-ciberneticas/#:~:text=Esa%20validaci%C3%B3n%20con%20texto%20ligeramente,humanos%20de%20los%20bots%20automatizados." class="list-group-item list-group-item-action list-group-item-warning">reCaptcha Enterprise 3</a>
         <a target="_blank" href="https://sweetalert2.github.io/" class="list-group-item list-group-item-action list-group-item-warning">SweetAlert2</a>
+        <a target="_blank" href="https://www.youtube.com/watch?v=M1jkZx2crBg&feature=emb_title" class="list-group-item list-group-item-action list-group-item-warning">Video explicativo de como instalar ReCaptchaV2</a>
     </div>
 </div>
 
