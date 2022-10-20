@@ -1,12 +1,6 @@
 <?php
 include_once("../estructura/Cabecera.php")
 ?>
-<style>
-    .texto-titulo {
-        text-shadow: 3px 4px 6px #111;
-    }
-</style>
-
 <div class="container-fluid pe-5 ps-5 text-center text-light">
     <div id="que-es">
         <div class="display-4 text-warning texto-titulo">¿Qué es un Captcha?</div>

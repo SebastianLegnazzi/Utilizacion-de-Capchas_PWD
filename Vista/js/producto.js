@@ -2,53 +2,63 @@
 /************* CARRITO ****************/
 /**************************************/
 
-function sumarCarrito(){
+function sumarCarrito() {
     let tabla, fila, celda0, celda1, celda2, celda3, celda4;
-	tabla = document.getElementById("lista__carrito");
+    tabla = document.getElementById("lista__carrito");
     fila = tabla.insertRow(tabla.rows.length);
-    celda0=fila.insertCell(0);
-    celda1=fila.insertCell(1);
-	celda2=fila.insertCell(2);
-	celda3=fila.insertCell(3);
-	celda4=fila.insertCell(4);
-    celda0.innerHTML="<img src='"+arrayDatosProducto[0]+"'>";
-    celda1.innerHTML=arrayDatosProducto[1];
-    celda2.innerHTML=arrayDatosProducto[2];
-    celda3.innerHTML=arrayDatosProducto[3];
-    celda4.innerHTML="<a href='#' onclick='borrarProducto(this.parentNode.parentNode.rowIndex); contadorCarrito()'>Eliminar</a>";
-    alert("El producto se sumo correctamente al carrito!");
+    celda0 = fila.insertCell(0);
+    celda1 = fila.insertCell(1);
+    celda2 = fila.insertCell(2);
+    celda3 = fila.insertCell(3);
+    celda4 = fila.insertCell(4);
+    celda0.innerHTML = "<img src='" + arrayDatosProducto[0] + "'>";
+    celda1.innerHTML = arrayDatosProducto[1];
+    celda2.innerHTML = arrayDatosProducto[2];
+    celda3.innerHTML = arrayDatosProducto[3];
+    celda4.innerHTML = "<a href='#' onclick='borrarProducto(this.parentNode.parentNode.rowIndex); contadorCarrito()'>Eliminar</a>";
+    Swal.fire({
+        icon: 'success',
+        title: 'El producto se agrego al carrito correctamente!',
+        showConfirmButton: false,
+        timer: 1000
+    })
     cerrarDetalle();
     sumCompra();
 }
 
-function borrarProducto(numero){
-    let tabla=document.getElementById("lista__carrito");		
+function borrarProducto(numero) {
+    let tabla = document.getElementById("lista__carrito");
     tabla.deleteRow(numero);
-    alert("Producto eliminado!");
+    Swal.fire({
+        icon: 'success',
+        title: 'Producto eliminado!',
+        showConfirmButton: false,
+        timer: 1000
+    })
     sumCompra();
 }
 
-function abrirCarrito(){
+function abrirCarrito() {
     let carritoPopUp;
     carritoPopUp = document.getElementById("carrito");
     carritoPopUp.style = "display: flex;"
 }
 
-function cerrarCarrito(){
+function cerrarCarrito() {
     let carritoPopUp;
     carritoPopUp = document.getElementById("carrito");
     carritoPopUp.style = "display: none;"
 }
 
-function sumCompra(){
+function sumCompra() {
     let totalCompra, sumaTot, tabla
     tabla = document.getElementById("lista__carrito");
     totalCompra = document.getElementById("total-Compra");
     sumaTot = 0;
-    for (i = 1; i < tabla.rows.length; i++){
+    for (i = 1; i < tabla.rows.length; i++) {
         sumaTot += parseInt(tabla.rows[i].cells[3].innerHTML);
     }
-    totalCompra.innerHTML ="Precio Total: $ "+sumaTot;
+    totalCompra.innerHTML = "Precio Total: $ " + sumaTot;
 }
 
 
@@ -57,7 +67,7 @@ function sumCompra(){
 /**************************************/
 var arrayDatosProducto = [];
 
-function verDetalle(datos){
+function verDetalle(datos) {
     let detallePopUp, imagen, nombre, descripcion, precio;
     detallePopUp = document.getElementById("detalle");
     imagen = detallePopUp.children[0].children[0].children[0];
@@ -67,15 +77,15 @@ function verDetalle(datos){
     imagen.src = datos.children[0].children[0].src;
     nombre.innerHTML = datos.childNodes[3].childNodes[1].childNodes[0].nodeValue;
     descripcion.innerHTML = datos.childNodes[3].childNodes[3].childNodes[0].nodeValue;
-    precio.innerHTML = "Precio: $ "+datos.childNodes[3].childNodes[5].childNodes[0].nodeValue;
+    precio.innerHTML = "Precio: $ " + datos.childNodes[3].childNodes[5].childNodes[0].nodeValue;
     detallePopUp.style = "display: flex;";
-    arrayDatosProducto = [datos.children[0].children[0].src, 
+    arrayDatosProducto = [datos.children[0].children[0].src,
     datos.childNodes[3].childNodes[1].childNodes[0].nodeValue,
     datos.childNodes[3].childNodes[3].childNodes[0].nodeValue,
     datos.childNodes[3].childNodes[5].childNodes[0].nodeValue]
 }
 
-function cerrarDetalle(){
+function cerrarDetalle() {
     let detallePopUp;
     detallePopUp = document.getElementById("detalle");
     detallePopUp.style = "display: none;"
@@ -85,14 +95,14 @@ function cerrarDetalle(){
 /************* FILTER *****************/
 /**************************************/
 
-function filtrar(textFilter){
+function filtrar(textFilter) {
     let tarjetas;
     tarjetas = document.getElementsByClassName("tarjetas-productos");
-    for(i=0; i < tarjetas.length;i++){
+    for (i = 0; i < tarjetas.length; i++) {
         console.log(tarjetas[i].textContent.toLocaleLowerCase().includes(textFilter.toLowerCase()))
-        if(tarjetas[i].textContent.toLocaleLowerCase().includes(textFilter.toLowerCase())){
+        if (tarjetas[i].textContent.toLocaleLowerCase().includes(textFilter.toLowerCase())) {
             tarjetas[i].classList.remove("filter");
-        }else{
+        } else {
             tarjetas[i].classList.add("filter");
         }
     }
@@ -101,15 +111,43 @@ function filtrar(textFilter){
 /**************************************/
 /************* COMPRAR ****************/
 /**************************************/
+function redireccionarPaginaInicio() {
+    location.href = 'index.php'
+}
 
-function confirmarCompra(){
-    let tabla;
-    tabla=document.getElementById("lista__carrito");
-    if(tabla.rows.length > 1){
-        window.location.assign('../index.html');
-        alert("Su compra fue confirmada correctamente!");
-    }else{
-        alert("el carrito está vacio!");
+function confirmarCompra() {
+    let tabla = document.getElementById("lista__carrito");
+    if (tabla.rows.length > 1) {
+        if (localStorage.getItem("inicio") == "si") {
+            Swal.fire({
+                icon: 'success',
+                title: 'Su compra fue confirmada correctamente!',
+                showConfirmButton: false,
+                timer: 1500
+            })
+            setTimeout("redireccionarPaginaInicio()", 1450);
+        }else{
+            Swal.fire({
+                title: 'No tienes cuenta!',
+                text: "Desea crear una?",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Si'
+              }).then((result) => {
+                if (result.isConfirmed) {
+                    location.href= "registrarse.php"
+                }
+              })
+        }
+    } else {
+        Swal.fire({
+            icon: 'error',
+            title: 'No hay elementos en el carrito!',
+            showConfirmButton: false,
+            timer: 1500
+        })
     }
 }
 
@@ -117,13 +155,13 @@ function confirmarCompra(){
 /************* MODULOS ****************/
 /**************************************/
 
-function contadorCarrito(){
+function contadorCarrito() {
     let contador, carrito;
     contador = document.getElementById("contador__carrito");
     carrito = document.getElementById("lista__carrito");
-    if(carrito.rows.length > 1){
+    if (carrito.rows.length > 1) {
         contador.innerHTML = carrito.rows.length - 1
-    }else{
+    } else {
         contador.innerHTML = ""
     }
 }
