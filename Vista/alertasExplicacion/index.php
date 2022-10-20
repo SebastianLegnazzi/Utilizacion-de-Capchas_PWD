@@ -14,8 +14,8 @@ include_once("../estructura/Cabecera.php");
         <div class="display-5 text-warning texto-titulo">Instalacion</div>
         <div class="text-start fs-6 mt-4">
             <p class="text-center">Para instalarlo tenemos 2 formas:</p>
-            <div class="d-flex justify-content-around mb-3">
-                <div>
+            <div class="row mb-3">
+                <div class="col-md-6">
                     <ul class="list-group shadow">
                         <li class="list-group-item">
                             <p> A travez de CDN incluyendo el siguiente comando en la cabecera de la pagina</p>
@@ -25,7 +25,7 @@ include_once("../estructura/Cabecera.php");
                         </li>
                     </ul>
                 </div>
-                <div>
+                <div class="col-md-6">
                     <ul class="list-group shadow">
                         <li class="list-group-item">
                             <a class="link-primary" href="https://www.jsdelivr.com/package/npm/sweetalert2" target="_blank">

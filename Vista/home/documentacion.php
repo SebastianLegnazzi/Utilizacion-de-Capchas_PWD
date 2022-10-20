@@ -1,11 +1,11 @@
 <?php
 include_once("../estructura/Cabecera.php")
 ?>
-
+<div class="display-4 text-warning texto-titulo text-center">Documentación</div>
 <div class="container mt-3 d-flex justify-content-center">
     <div class="list-group col-md-4 text-center">
         <a target="_blank" href="https://www.cloudflare.com/es-es/learning/bots/how-captchas-work/" class="list-group-item list-group-item-action list-group-item-warning" aria-current="true">
-        Info CAPTCHAS
+            Info CAPTCHAS
         </a>
         <a target="_blank" href="https://blog.hubspot.es/website/que-es-captcha" class="list-group-item list-group-item-action list-group-item-warning">Tipos de Captcha</a>
         <a target="_blank" href="https://www.xataka.com/basics/captcha-recaptcha-que-cuales-sus-diferencias-que-cambia-recaptcha-v3" class="list-group-item list-group-item-action list-group-item-warning">Captcha v3</a>
@@ -19,7 +19,26 @@ include_once("../estructura/Cabecera.php")
         <a target="_blank" href="https://www.youtube.com/watch?v=M1jkZx2crBg&feature=emb_title" class="list-group-item list-group-item-action list-group-item-warning">Video explicativo de como instalar ReCaptchaV2</a>
     </div>
 </div>
-
+<hr>
+<div class="display-4 text-warning texto-titulo text-center">Librerias Utilizadas</div>
+<div class="mt-3 row">
+    <div class="col-md-3">
+        <p class="text-warning text-center">Boostrap</p>
+        <img class="img-thumbnail col-md-4 mt-4 mx-auto d-block" src="../img/Librerias/Bootstrap_logo.svg.png" alt="Boostrap imagen">
+    </div>
+    <div class="col-md-3">
+        <p class="text-warning text-center">MtCaptcha</p>
+        <img class="img-thumbnail col-md-4 mx-auto d-block" src="../img/Librerias/mtCatpcha.jpg" alt="MTcaptcha imagen">
+    </div>
+    <div class="col-md-3">
+        <p class="text-warning text-center">ReCaptcha</p>
+        <img class="img-thumbnail col-md-4 mt-2 mx-auto d-block" src="../img/Librerias/Recaptcha.png" alt="recaptcha imagen">
+    </div>
+    <div class="col-md-3">
+        <p class="text-warning text-center">SweetAlert2</p>
+        <img class="img-thumbnail col-md-4 mt-5 mx-auto d-block" src="../img/Librerias/SweetAlert2.png" alt="SweetAlert imagen">
+    </div>
+</div>
 <?php
 include_once("../estructura/Pie.php")
 ?>
