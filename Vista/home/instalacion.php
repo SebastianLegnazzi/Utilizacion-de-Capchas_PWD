@@ -10,7 +10,7 @@ include_once("../estructura/Cabecera.php")
                 Primero se debera tener una cuenta <a class="link-warning" href="https://admin.mtcaptcha.com/signup?plantype=A&promoter=wwwnav">registrada</a> y una &lt;SiteKey&gt; para usar MTCaptcha en su propio sitio web.
             </p>
             <p>
-                Aaqui debemos crear una cuenta con nuestro email, contraseña, y nombre de dominio.
+                Aqui debemos crear una cuenta con nuestro email, contraseña, y nombre de dominio.
                 una vez creada no data la &lt;SiteKey&gt;, y la &lt;TestKey&gt; ademas devemos agregar a "Development & Test Env Domains" el dominio localhost para poder asi ver el captcha sin tener un dominio comprado.
                 en link <a class="link-warning" href="https://service.mtcaptcha.com/mtcv1/demo/">"get embed code"</a>
             </p>
@@ -24,7 +24,7 @@ include_once("../estructura/Cabecera.php")
             <img src="../img/mtCaptcha_instalacion/generador_codigo_mtcaptcha.png" alt="">
                 
             <p>
-                Aca podremos agregar nuestra &lt;SiteKey&gt; ademas personalizar lenguaje, estilos, temas, y tambien activar el "Auto Form Validate" que permite que solo se podra hacer Submit del formulario si completo correctamente el MtCaptcha.
+                Aca podremos, ademas de agregar nuestra &lt;SiteKey&gt; , personalizar lenguaje, estilos, temas, y tambien activar el "Auto Form Validate" que permite que solo se podra hacer Submit del formulario si completo correctamente el MtCaptcha.
             </p>
             <p>
                 una vez seleccionado personalizado como queremos nuestro captcha le damos a "aplicar" para asi poder ver una previa de como se vera el captcha en nuestra pagina.
