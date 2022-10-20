@@ -45,7 +45,32 @@ include_once("../estructura/Cabecera.php")
     <div id="reCaptchav2v3">
         <div class="display-4 text-warning texto-titulo">Instalación reCaptcha v2 y v3</div>
         <div class="lead text-start fs-6 mt-4">
-            <p></p>
+        <p>Primeramente para poder crear nuestras claves de cliente y servidor (que es lo que accionará los Captchas) necesitamos entrar a <a href="https://www.google.com/recaptcha/admin/create" target="_blank">este sitio </a>para registrar nuestra página en Google ReCaptcha. Para ello, necesitará inicar sesión en su cuenta de Google y crear la aplicación completando el formulario mostrado en la página.</p>
+            <img src="../img/Registro-pagina-ReCaptcha.png" alt="Formulario registro página" height="450px" width="500px">
+            <p>Como paso siguiente tendremos que en el apartado "Etiqueta" escribir un nombre de ejemplo con el que queramos identificar a nuestra página, por ejemplo "PruebaCaptcha.com o ReCaptchaPrueba.com" (Google requiere de esto aunque a nosotros no nos servirá por el momento).
+            </p>
+            <p>Luego de haber completado la etiqueta, procedemos a elegir que tipo de ReCaptcha queremos incluir en nuestra página. Recordemos como hemos explicado en la sección <a href="tipos.php">tipos</a>, si elegimos ReCaptcha v3 no se nos presentará ningún desafío debido al nuevo metodo de analisis en base a un puntaje de comportamiento sobre el usuario.
+            En este caso elegiremos primero hacer una página con un <strong> ReCaptcha v2</strong>. 
+            <br>
+            Una vez tildado el círculo, nos aparecerán distintos modos de verificación que posee esta versión de ReCaptcha. Elegiremos la primera: 
+            </p>
+            <img src="../img/EleccionTipo-ReCaptcha.png" alt="Elección tipo ReCaptcha v2" height="270px" width="500px">
+            <br>
+            <p>En el apartado "Dominios" es donde tendremos que poner poner el dominio en donde estamos queriendo utilizar nuestro ReCaptcha, como nosotros aún no tenemos uno, llenaremos el espacio indicando que lo haremos desde un "localhost".
+            <br>
+            A su vez, ingresaremos la cuenta de Google del propietario y aceptamos las "Condiciones de servicio" así como el "Envío de alertas a los propietarios". Esto último nos enviará correos si hay errores en nuestro sitio o problemas de tráfico (no es realmente necesario marcarla, pero lo haremos igual).
+            </p>
+            <img src="../img/Dominio-condiciones-alertas.png" alt="Dominios, condiciones y alertas" height="400px" width="500px">
+            <br>
+            <p>Una vez pulsado el boton "Enviar", nuestra página habrá quedado registrada y nos brindarán las claves de sitio y la secreta.
+            </p>
+            <img src="../img/Claves.png" alt="Claves" height="270px" width="600px">
+            <br>
+            <p>A partir de ahora empezaremos a realizar la inclusión del ReCaptcha a nuestro código PHP.
+            <br>
+            Como primer paso, tocamos el link mostrado en la imágen anterior que dice "Ver integración del lado del cliente". Una vez dentro de la documentación, buscamos hasta encontrar el siguiente código.
+            </p>
+            <img src="../img/Inclusión-ReCaptcha-cliente.png" alt="Codigo ReCaptcha PHP" height="300px" width="600px">
         </div>
     </div>
 </div>
