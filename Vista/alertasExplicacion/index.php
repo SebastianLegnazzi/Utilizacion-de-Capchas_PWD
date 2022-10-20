@@ -6,14 +6,14 @@ include_once("../estructura/Cabecera.php");
     <div id="que-es">
         <div class="display-5 text-warning texto-titulo">¿Qué es SweetAlert2?</div>
         <div class="text-start fs-6 mt-4">
-            <p>SweetAlert es una libreria de alertas, tiene muchos diseños con diversas posibilidades para notificar dependiendo lo que corresponda al usuario. <a class="link-info" href="https://sweetalert2.github.io/" target="_blank" >Ir a la pagina</a></p>
+            <p class="text-center">SweetAlert es una libreria de alertas, tiene muchos diseños con diversas posibilidades para notificar dependiendo lo que corresponda al usuario. <a class="link-info" href="https://sweetalert2.github.io/" target="_blank" >Ir a la pagina</a></p>
         </div>
     </div>
     <hr>
     <div id="ejemplos">
         <div class="display-5 text-warning texto-titulo">Instalacion</div>
         <div class="text-start fs-6 mt-4">
-            <p>Para instalarlo tenemos 2 formas:</p>
+            <p class="text-center">Para instalarlo tenemos 2 formas:</p>
             <div class="d-flex justify-content-around mb-3">
                 <div>
                     <ul class="list-group shadow">
@@ -47,7 +47,7 @@ include_once("../estructura/Cabecera.php");
         <div id="uso">
             <div class="display-5 text-warning texto-titulo">¿Como se usa?</div>
             <div class="text-start fs-6 mt-4">
-                <p>Para utilizar se puede observar la siguiente documentacion que muestra diversos ejemplos con el codigo para utilizar en la pagina <a target="_blank" class="link-info" href="https://sweetalert2.github.io/#examples">Examples</a></p>
+                <p class="text-center">Para utilizar se puede observar la siguiente documentacion que muestra diversos ejemplos con el codigo para utilizar en la pagina <a target="_blank" class="link-info" href="https://sweetalert2.github.io/#examples">Examples</a></p>
             </div>
         </div>
     </div>

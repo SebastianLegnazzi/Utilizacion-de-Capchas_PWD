@@ -2,7 +2,7 @@
 include_once("../estructura/Cabecera.php")
 ?>
 
-<div class="container m-4 d-flex justify-content-center">
+<div class="container mt-3 d-flex justify-content-center">
     <div class="list-group col-md-4 text-center">
         <a target="_blank" href="https://www.cloudflare.com/es-es/learning/bots/how-captchas-work/" class="list-group-item list-group-item-action list-group-item-warning" aria-current="true">
         Info CAPTCHAS
