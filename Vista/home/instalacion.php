@@ -114,9 +114,31 @@ include_once("../estructura/Cabecera.php")
             <p>
             En esta imágen también observamos otros parametros que debe contener nuestro servidor como el ya mencionado secret (la clave secreta), la respuesta y la ip.
             </p>
-            <br> <br>
             <p>
-                en el caso de recaptcha v3 es muy similiar a la instacion de ReCaptcha v2 salvo que en ReCaptchaV3 durante la instalacion elegimos la opcion reCAPTCHA V2 
+            <span class="bg-dark">$recaptcha_ip =</span> En esta variable guardaremos la IP del servidor como se muetra en la imágen, usando una IP remota colocamos lo mismo <span class="bg-dark">$_SERVER['REMOTE_ADDR'];</span>.
+            <br>
+            <span class="bg-dark">$recaptcha_response =</span> Aquí es donde se guardará la respuesta del Captcha con <span class="bg-dark"> $_POST['g-recaptcha-response'];</span>
+            <br>
+            <span class="bg-dark">$recaptcha =</span> Esta variable contendrá la función<span class="bg-dark"> file_get_contents</span> que mandará a nuestra <span class="bg-dark">$recaptcha_url</span> toda la información anidada de la prueba ReCaptcha para transformarlo a un objeto json.
+            <br>
+            <span class="bg-dark">$atributos =</span> Contendrá la función <span class="bg-dark"> json_decode</span> que transformará el objeto json en un ARRAY. A esta función se le manda como parametros nuestra variable <span class="bg-dark"> $recaptcha</span> separado con una coma "," al valor true.
+            </p>
+            <p>
+            Por ultimo, veremos la respuestra transcripta del json gracias al <span class="bg-dark">json_decode</span>.
+            </p>
+            <img src="../img/Respuesta-json.png" alt="Respuesta json">
+            <p>
+                Teniendo esta información podremos hacer una validación dependiendo si la prueba dio el valor ['success'].
+            </p>
+            <img src="../img/Valido-success.png" alt="">
+            <br>
+            <img src="../img/Captcha-funciona.png" alt="Prueba ReCaptcha">
+            <br>
+            <img src="../img/Mensaje-valido.png" alt="ReCaptcha valido">
+            <br><br>
+            <h2>ReCaptcha v3</h2>
+            <p>
+                En el caso de recaptcha v3 es muy similiar a la instacion de ReCaptcha v2 salvo que en ReCaptchaV3 durante la instalacion elegimos la opcion reCAPTCHA v3. 
             </p>
             <img src="../img/recaptchav3/login_captcha_v3.png" alt="">
             <p>
