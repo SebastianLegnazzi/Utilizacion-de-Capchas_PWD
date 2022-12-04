@@ -3,7 +3,7 @@
 - **DESCRIPCION:** Utilizar distintas librerias de capchas para solucionar un problema en especifico.
 - **REQUERIMIENTOS:** [PDF Requisitos y distintos tipos de libreria para elegir](https://drive.google.com/file/d/1N1Rpc9y5dQS2-uA7o0xbdvPqtxIdhKpM/view?usp=sharing),
 - **PROFESORES:** Sanchez Viviana, Pino Maria Laura, Carrasco Claudia
-- **NOTA:** :arrows_counterclockwise: En proceso :arrows_counterclockwise:
+- **NOTA:** :white_check_mark: 10 :white_check_mark:
 ## Datos Institucionales
 - **NOMBRE Y APELLIDO:** Sebastian Legnazzi
 - **LEGAJO:** FAI-3152
